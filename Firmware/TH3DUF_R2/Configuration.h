@@ -881,9 +881,9 @@
 // If you need to reverse the e motor direction also enabled the REVERSE_E_MOTOR_DIRECTION option.
 // Example EStep Values: TH3D Aluminum Extruder - 95 ESteps, TH3D Tough Extruder - 463 ESteps, BMG Extruder - 415 ESteps
 // When installing a Tough Extruder or E3D Titan or Bondtech that is Geared you likely need to enable the REVERSE_E_MOTOR_DIRECTION option
-//#define CUSTOM_ESTEPS
+#define CUSTOM_ESTEPS
 //#define REVERSE_E_MOTOR_DIRECTION
-#define CUSTOM_ESTEPS_VALUE 463
+#define CUSTOM_ESTEPS_VALUE 96.09
 
 // DUAL HOTEND SETTINGS ----------------------------
 
@@ -963,8 +963,8 @@
 // How to use - measure (home XY then jog using the LCD 1mm at a time) the X and Y distance the nozzle is off
 // the build plate and then put those as NEGATIVE values below, positive values will NOT work (move your endstops to fix a positve offset).
 //#define HOME_ADJUST
-#define X_HOME_ADJUST_LOCATION -10
-#define Y_HOME_ADJUST_LOCATION -10
+//#define X_HOME_ADJUST_LOCATION -10
+//#define Y_HOME_ADJUST_LOCATION -10
 
 // LINEAR ADVANCE ----------------------------------
 // See here on how to use Linear Advance: http://marlinfw.org/docs/features/lin_advance.html

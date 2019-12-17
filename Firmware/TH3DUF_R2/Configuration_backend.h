@@ -423,9 +423,14 @@
     #define MOTHERBOARD BOARD_CR10S
   #endif
   
-  #if ENABLED(RR_LCD_UPGRADE)
+  #if ENABLED(CR10LCD_CR10S) || ENABLED(ENDER3_DUALBOARD) || ENABLED(ENDER5_DUALBOARD)
+    #define CR10_STOCKDISPLAY
+  #elif ENABLED(CR20)
+    #define MINIPANEL
+  #else
     #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
   #endif
+
   
   #define BAUDRATE 115200
 
@@ -2929,9 +2934,9 @@
     #define DEFAULT_Ki 4.99
     #define DEFAULT_Kd 50.94
   #else  
-    #define  DEFAULT_Kp 22.2
-    #define  DEFAULT_Ki 1.08
-    #define  DEFAULT_Kd 114
+    #define  DEFAULT_Kp 21.22
+    #define  DEFAULT_Ki 1.44
+    #define  DEFAULT_Kd 78.24
   #endif
 #endif 
 

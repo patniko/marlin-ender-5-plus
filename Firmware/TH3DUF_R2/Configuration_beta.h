@@ -47,7 +47,7 @@
 //===========================================================================
 // Creality Ender 5 PLUS Options - Select 'Arduino Mega 2560' from Tools > Board
 //===========================================================================
-//#define ENDER5_PLUS
+#define ENDER5_PLUS
 
 // What LCD are you using? (Only 12864 LCD is supported)
 //#define RR_LCD_UPGRADE
@@ -59,6 +59,6 @@
 
 // If you are using the stock BL Touch sensor uncomment the below line
 // If you are using a BL Touch but with a different mount uncomment the below line and the above CUSTOM_PROBE then enter the offsets below.
-//#define ENDER5_PLUS_BLTOUCH
+#define ENDER5_PLUS_BLTOUCH
 
 #endif // CONFIGURATION_H

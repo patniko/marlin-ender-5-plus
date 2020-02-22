@@ -50,7 +50,7 @@
 #define ENDER5_PLUS
 
 // What LCD are you using? (Only 12864 LCD is supported)
-//#define RR_LCD_UPGRADE
+#define RR_LCD_UPGRADE
 // Stock Touch LCD is not supported at this time.
 // Info on converting the LCD can be found here: COMING SOON
 

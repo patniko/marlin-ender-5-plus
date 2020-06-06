@@ -1,0 +1,1 @@
+".\Windows Arduino\arduino.exe" .\Firmware\TH3DUF_R2\TH3DUF_R2.ino

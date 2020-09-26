@@ -2912,28 +2912,12 @@
 #define PID_MAX BANG_MAX
 #define PID_K1 0.95
 
-#if ENABLED(PIDTEMP)
-  #define PID_AUTOTUNE_MENU
-  #define PID_FUNCTIONAL_RANGE 10
-  
-  #if ENABLED(WANHAO_D6)
-    #define  DEFAULT_Kp 9.12
-    #define  DEFAULT_Ki 0.41
-    #define  DEFAULT_Kd 50.98
-  #elif ENABLED(TH3D_EZ300)
-    #define DEFAULT_Kp 47.60
-    #define DEFAULT_Ki 7.96
-    #define DEFAULT_Kd 71.16
-  #elif ENABLED(TIM_TORNADO)
-    #define DEFAULT_Kp 31.89
-    #define DEFAULT_Ki 4.99
-    #define DEFAULT_Kd 50.94
-  #else  
-    #define  DEFAULT_Kp 21.22
-    #define  DEFAULT_Ki 1.44
-    #define  DEFAULT_Kd 78.24
-  #endif
-#endif 
+#define PID_AUTOTUNE_MENU
+#define PID_FUNCTIONAL_RANGE 10
+
+#define DEFAULT_Kp 30.97
+#define DEFAULT_Ki 2.76
+#define DEFAULT_Kd 86.88
 
 #if ENABLED(PIDBED_ENABLE)
   #if ENABLED(SLIM_1284P) && ENABLED(MANUAL_MESH_LEVELING)
